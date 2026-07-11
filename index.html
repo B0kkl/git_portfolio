@@ -4,7 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICT & Systems Engineer | Professional Portfolio</title>
+    <title>Hussein Mwachikumba | ICT & Systems Engineer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Hussein Mwachikumba — ICT & Systems Engineer based in Blantyre, Malawi. Specializing in network infrastructure, automation, and systems engineering. Available for remote and hybrid roles.">
+    <meta name="keywords"
+        content="ICT Engineer, Systems Engineer, Network Infrastructure, Python Automation, Malawi, Hussein Mwachikumba">
+    <meta name="author" content="Hussein Mwachikumba">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Hussein Mwachikumba | ICT & Systems Engineer">
+    <meta property="og:description"
+        content="I engineer solutions that run themselves. Network infrastructure, automation, and systems engineering.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://b0kkl.github.io/git_portfolio/">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hussein Mwachikumba | ICT & Systems Engineer">
+    <meta name="twitter:description"
+        content="ICT & Systems Engineer — Network infrastructure, automation, and systems engineering.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,33 +38,42 @@
 </head>
 
 <body>
+    <!-- Skip to content (accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
-        <nav class="container">
+        <nav class="container" aria-label="Main navigation">
             <div class="logo">
-                <span class="mono">&lt;SYS_ENG /&gt;</span>
+                <span class="mono"><SYS_ENG /></span>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-menu">
                 <li><a href="#dashboard">Dashboard</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#methodology">Methodology</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section id="hero" class="container">
             <div class="hero-content animate-fade-in">
                 <span class="section-label">Available for Remote / Hybrid</span>
-                <h1>ICT & Systems Engineer</h1>
+                <h1>Hussein Mwachikumba</h1>
+                <p class="hero-subtitle">ICT & Systems Engineer</p>
                 <p class="manifesto">
-                    “I don’t just maintain systems — I engineer solutions that run themselves. From network
-                    infrastructure to trading automation, I build systems that are simple, measurable, and resilient.”
+                    "I don't just maintain systems — I engineer solutions that run themselves. From network
+                    infrastructure to trading automation, I build systems that are simple, measurable, and resilient."
                 </p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-primary">Schedule a Technical Discussion</a>
-                    <a href="#" class="btn btn-secondary">Download CV (PDF)</a>
+                    <a href="HusseinMwachikumba_CV.pdf" class="btn btn-secondary" download>Download CV (PDF)</a>
                 </div>
                 <p class="quote">“Simplicity is the key to brilliance.” — Bruce Lee</p>
             </div>
@@ -145,8 +177,8 @@
                             <span class="stat-desc">Manual Ping Checks</span>
                         </div>
                         <div class="btn-group">
-                            <a href="#" class="btn btn-small">View GitHub</a>
-                            <a href="#" class="btn btn-small">System Diagram</a>
+                    <a href="https://github.com/B0kkl" class="btn btn-small" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                    <a href="#" class="btn btn-small">System Diagram</a>
                         </div>
                     </div>
                 </div>
@@ -369,21 +401,60 @@
                 <h2>Let’s build something resilient.</h2>
                 <p>Available for full-time, contract, or consulting roles.</p>
                 <div class="contact-links">
-                    <a href="#" class="btn btn-primary">WhatsApp</a>
-                    <a href="#" class="btn btn-primary">LinkedIn</a>
-                    <a href="#" class="btn btn-primary">Email Me</a>
+                    <a href="https://wa.me/265992610320" class="btn btn-primary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/hussein-mwachikumba-508685249/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:hmwachikumbah@gmail.com" class="btn btn-primary">Email Me</a>
                 </div>
                 <div class="logistics">
-                    <span>📍 Malawi (CAT)</span>
-                    <span>🌍 Open to Remote</span>
+                    <span>📍 Blantyre, Malawi (CAT)</span>
+                    <span>🌍 Open to Remote / Hybrid</span>
                 </div>
+            </div>
+        </section>
+
+        <!-- Simple Contact Form -->
+        <section id="contact-form" class="container">
+            <div class="glass contact-form-card">
+                <div class="section-header">
+                    <span class="section-label">Get In Touch</span>
+                    <h2>Send a Message</h2>
+                </div>
+                <form id="message-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="form-name">Name</label>
+                        <input type="text" id="form-name" name="name" placeholder="Your name" required
+                            autocomplete="name">
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email">Email</label>
+                        <input type="email" id="form-email" name="email" placeholder="your@email.com" required
+                            autocomplete="email">
+                        <span class="form-error" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Message</label>
+                        <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+                    <p class="form-note">Or email directly: <a href="mailto:hmwachikumbah@gmail.com">hmwachikumbah@gmail.com</a></p>
+                </form>
             </div>
         </section>
     </main>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 17V3M10 3L4 9M10 3L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2024 ICT & Systems Engineer. Built for Performance.</p>
+            <p>&copy; <span id="current-year">2024</span> Hussein Mwachikumba. Built for Performance.</p>
         </div>
     </footer>
 
