@@ -393,6 +393,25 @@ nav {
     font-size: 2rem;
     color: var(--accent-primary);
     opacity: 0.3;
+    margin-bottom: var(--spacing-xs);
+}
+
+.step h4 {
+    margin-bottom: 0.25rem;
+}
+
+.step p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Bottom Section Spacing — tighter vertical rhythm */
+#leadership,
+#tech-stack,
+#contact,
+#contact-form {
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
 }
 
 /* Contact Section */
@@ -434,6 +453,7 @@ nav {
 /* Timeline Section */
 .timeline-container {
     padding: var(--spacing-md);
+    padding-bottom: var(--spacing-lg);
     margin-top: var(--spacing-md);
 }
 
@@ -484,6 +504,11 @@ nav {
     padding: var(--spacing-md);
 }
 
+.writing-section .section-header,
+.certs-section .section-header {
+    margin-bottom: var(--spacing-md);
+}
+
 .writing-list li,
 .certs-list li {
     margin-bottom: var(--spacing-sm);
@@ -526,6 +551,7 @@ nav {
 
 .tech-category h4 {
     margin-bottom: var(--spacing-sm);
+    padding-top: var(--spacing-xs);
     color: var(--accent-primary);
 }
 
